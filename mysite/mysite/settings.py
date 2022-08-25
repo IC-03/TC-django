@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'categorias.apps.CategoriasConfig' #Esto se encuentra en categorias > apps.py > Es el nombre la clase "categoriasConfig" esto es para registrar
 ]
 
 MIDDLEWARE = [
