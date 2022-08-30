@@ -9,7 +9,8 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+''' datos del admin:
+admin, admin@gmail.com, 1234'''
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-dsw8u11w&#dj%qu*309och+8x%6%t1_=up%rlb%&q68xm-alrn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'categorias.apps.CategoriasConfig' #Esto se encuentra en categorias > apps.py > Es el nombre la clase "categoriasConfig" esto es para registrar
+    'categorias.apps.CategoriasConfig', #Esto se encuentra en categorias > apps.py > Es el nombre la clase "categoriasConfig" esto es para registrar
+    'libros.apps.LibrosConfig',
+    'autores.apps.AutoresConfig'
 ]
 
 MIDDLEWARE = [
