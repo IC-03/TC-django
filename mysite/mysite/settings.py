@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'categorias.apps.CategoriasConfig', #Esto se encuentra en categorias > apps.py > Es el nombre la clase "categoriasConfig" esto es para registrar
+    'rest_framework',
     'libros.apps.LibrosConfig',
     'autores.apps.AutoresConfig'
 ]
